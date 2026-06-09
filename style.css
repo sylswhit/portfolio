@@ -3,6 +3,12 @@ h1 {
     font-size: 500%;
 }
 
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 250%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
 .one {
     font-family: Courier New, monospace;
     font-style: italic;
@@ -64,6 +70,7 @@ h1 {
 
 p {
     color: white;
+    font-family: Garamond, serif;
     text-align: center;
 }
 
@@ -71,6 +78,17 @@ body {
     background: black;
 }
 
+.name {
+    font-family: Brush Script MT, cursive;
+    font-style: underline;
+}
+
 .me {
     width: 200px;
+    filter: grayscale(100%);
+}
+
+.me:hover {
+    filter: grayscale(0%);
+    scale: 1.1;
 }
