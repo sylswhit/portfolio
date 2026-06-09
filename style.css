@@ -1,0 +1,76 @@
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 500%;
+}
+
+.one {
+    font-family: Courier New, monospace;
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 180px;
+
+    animation: moveLeft 1 linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 100%;
+}
+
+.two {
+    font-family: Garamond, serif;
+    font-style: bold;
+    text-align: center;
+    margin-right: 70px;
+
+    animation: moveRight 1 linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 100%;
+}
+
+.three {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: right;
+
+    margin-right: 100px;
+    animation: moveLeft 1 linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 100%;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background: black;
+}
+
+.me {
+    width: 200px;
+}
