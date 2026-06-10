@@ -9,6 +9,37 @@ h2 {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+/* #region about me section */
+.aboutme-title {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.aboutme-container {
+    margin: 60px auto;
+    padding: 0 60px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+.aboutme-text {
+    float: right;
+    border-radius: 5px;
+    /*border: 0.75px solid rgba(255, 255, 255, 0.3);*/
+    padding: 20px;
+    margin: 20px;
+}
+
+.aboutme {
+    text-align: right;
+}
+
+/* #endregion */
+
+/* #region title animations */
 .one {
     font-family: Courier New, monospace;
     font-style: italic;
@@ -68,6 +99,8 @@ h2 {
     }
 }
 
+/* #endregion */
+
 p {
     color: white;
     font-family: Garamond, serif;
@@ -76,19 +109,156 @@ p {
 
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 .name {
+    color: lightgray;
     font-family: Brush Script MT, cursive;
     font-style: underline;
+    font-size: 200%;
+}
+
+.name-nav {
+    color: lightgray;
+    font-family: Brush Script MT, cursive;
+    font-style: underline;
+    font-size: 200%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.nav-container {
+    z-index: 1000;
+    top: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    padding-top: 1px;
 }
 
 .me {
     width: 200px;
     filter: grayscale(100%);
+    border-radius: 10%;
 }
 
 .me:hover {
     filter: grayscale(0%);
     scale: 1.1;
 }
+
+
+/* #region copy/pasted wireframe */
+/* wireframe styling + info 
+
+.section-container {
+    margin: 60px auto;
+    padding: 0 60px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+.section-title {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+/* shared wire-box style — X placeholder */
+/* wire-box
+.wire-box {
+    border: 0.75px solid rgba(255, 255, 255, 0.3);
+    height: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.wire-box::before,
+.wire-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.wire-box--tall {
+    height: 200px;
+}
+
+/* three-column layout */
+/*
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* two-column layout */
+/*
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* stacked rows */
+/*
+.wire-row {
+    border: 0.75px solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+.wire-row--sm {
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+/* right-side content column */
+/*
+.wire-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.wire-label {
+    color: rgba(255, 255, 255, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+/* button placeholder */
+/*
+.wire-btn {
+    border: 0.75px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    padding: 6px 16px;
+    display: inline-block;
+    margin-top: 8px;
+    width: fit-content;
+}
+
+/* footer */
+.wire-footer {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* #endregion */
